@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #dde7f0;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 75px;
+        }
+        .wrapper-name {
+            color: black;
+            font-family: cursive;
+        }
+        .logo {
+            width: 75px;
+            height: 75px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        nav a {
+            margin: 0 50px;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            font-size: 20px;
+            padding: 7px 15px;
+            background-color: #c3dcf2;
+            border-radius: 12px 12px 12px 12px;
+            border: 2px solid;
+            border-right: 6px solid;
+            border-bottom: 6px solid;
+        }
+        nav a:hover {
+            background-color: #b7d2e5;
+            border: 2px solid;
+            border-left: 6px solid;
+            border-top: 6px solid;
+            border-radius: 12px;
+        }
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #FFE3E3;
+        }
+        article {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            margin-right: 20px;
+        }
+        .tab {
+            margin-left: 30px;
+        }
+        .artikel1 {
+            margin-bottom: 20px;
+        }
+        .artikel-judul {
+            text-align: center;
+            border-bottom: 1px dashed;
+            margin: 0 40%;
+            padding-bottom: 10px;
+            margin-bottom: 1rem;
+        }
+        .artikel-isi {
+            text-align: justify;
+        }
+        section {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+        }
+        aside {
+            flex: 0 0 300px;
+            background-color: #FFE3E3;
+            border-radius: 12px;
+        }
+        .aside {
+            padding: 20px 40px;
+        }
+        .aside-judul {
+            font-size: 24px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .gambar > img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+        footer {
+            background-color: #dde7f0;
+            padding: 30px 10px;
+            text-align: center;
+            color: black;
+            font-size: 16px;
+            border-top: 1px solid #dee2e6;
+        }
+        footer > p {
+            font-size: 16px;
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="wrapper-logo">
+                <img src="img/logo.jpeg" alt="Logo" class="logo">
+            </div>
+
+            <div class="wrapper-name">
+                <h1>My Website</h1>
+            </div>
+        </div>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <section class="artikel">
+                <h2 class="artikel-judul" id="beranda">Beranda</h2>
+                <p class="artikel-isi"><span class="tab"></span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, aspernatur obcaecati aperiam dolorum quos expedita. Veritatis optio, aliquid excepturi similique praesentium impedit ea delectus id necessitatibus suscipit, eligendi officia, blanditiis accusamus at. Suscipit incidunt illum cupiditate fugiat voluptate corrupti sapiente repudiandae fugit eum quod ipsa in laboriosam praesentium nostrum mollitia possimus aut eos, beatae placeat temporibus obcaecati illo veritatis? Corporis qui quas consectetur ullam, sapiente obcaecati natus doloremque praesentium impedit soluta officia ad quisquam non. Sequi minima rem officiis quam cumque corporis odio, nulla mollitia nihil quo reprehenderit laudantium! Accusantium eius, voluptatum vitae nam quo officia nisi, odio repellendus inventore quaerat reprehenderit sed nemo aut aperiam sint vel animi fugit atque non ipsa molestiae nobis. Quae praesentium quisquam nemo error blanditiis. Odit doloremque alias quod facilis laudantium quisquam eveniet expedita minima nemo suscipit quo molestiae, illo rem maiores voluptate dolorem ipsum. Ab maxime fugiat distinctio alias sequi a saepe nulla obcaecati deserunt veritatis. Tempore a molestiae nemo cumque, iusto, veritatis alias enim impedit vel nesciunt vitae maiores quod! Cupiditate cum iste dolorum incidunt repellendus numquam aperiam quibusdam illo nihil? Consectetur quaerat architecto repellendus quibusdam obcaecati alias repellat commodi deserunt magnam tempora, id vitae asperiores accusamus reiciendis, voluptatum maiores quos velit est magni a facilis nostrum inventore nulla numquam. Sequi soluta, ipsum sed dolorem repellendus eaque tenetur pariatur, hic voluptatibus omnis quo consequuntur facere qui ipsa architecto temporibus at perspiciatis rerum explicabo est ratione earum assumenda minus odio. Aperiam fugit itaque, amet velit doloremque, dolorem voluptatem nobis sit eum unde ipsum?</p>
+            </section>
+            <section class="artikel">
+                <h2 class="artikel-judul" id="tentang">Tentang</h2>
+                <p class="artikel-isi"><span class="tab"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusamus ratione iusto tempore vitae magni nam soluta minus. Accusamus sapiente molestiae ab quas, in sed iusto, quis hic nesciunt eveniet aliquid! Officia ipsa impedit, dolores ipsum porro dolorum deleniti eligendi. Nesciunt molestias cum expedita minus quisquam quo suscipit enim, ipsum autem repellendus. Similique ducimus at neque vitae porro cumque doloribus fuga, exercitationem quae dicta quam, modi id aliquam laboriosam, dolor repellendus quaerat ex! Expedita voluptate repellendus, dolores nostrum exercitationem placeat hic rem quos consectetur, voluptas et inventore architecto non quo fuga omnis eligendi eveniet molestiae debitis deleniti eum quae optio? Facere eveniet, exercitationem recusandae at sequi officiis dignissimos excepturi optio dolorum ipsum inventore aliquam explicabo. Vitae fugit minus ducimus veniam delectus tempore necessitatibus blanditiis ad deserunt ex magnam officiis nesciunt ratione nobis, debitis provident ipsa alias ab? Optio impedit minus eum vero nobis tenetur fugit saepe, commodi voluptas iste expedita, voluptatem ratione deserunt esse quos odio vitae corrupti! Magnam nisi provident repellat quam alias quae voluptas similique tempore et voluptatum molestias eius illo, porro ab totam? Quo repellendus sapiente voluptas! Sunt ipsum id quasi illum minima asperiores aut incidunt veritatis perspiciatis vel aliquid aspernatur voluptas, inventore consectetur architecto ipsa velit facere molestias expedita? Itaque assumenda incidunt, dolorum molestias eos nam quo dolorem doloribus ex voluptas ipsam cum non aliquid possimus. Voluptates, itaque quos consequuntur similique at officiis eius necessitatibus blanditiis, amet dignissimos maxime quis deserunt ullam enim, illum dicta magnam sapiente perferendis dolorem sit? Quidem ratione totam ad hic! Porro.</p>
+            </section>
+            <section class="artikel">
+                <h2 class="artikel-judul" id="kontak">Kontak</h2>
+                <p class="artikel-isi"><span class="tab"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus iste eos nobis, reprehenderit aspernatur mollitia quae iure sint voluptatem dolorum aliquid totam molestias alias? Ad, quis saepe commodi repudiandae quasi voluptatem illo sint id quod placeat quae eius adipisci atque esse exercitationem inventore cupiditate? Eos ab voluptatem sapiente nihil id aliquam suscipit, aut ad saepe distinctio commodi beatae placeat natus quos. Ducimus rerum iste placeat asperiores, veniam magni saepe, cupiditate sit natus, culpa blanditiis sed obcaecati accusantium incidunt dicta nam eius totam amet eum veritatis fugiat labore debitis beatae? Nihil eligendi tempora minus magni assumenda aliquid repellat in pariatur numquam accusantium possimus vitae ipsa incidunt asperiores unde excepturi, ipsum, quasi totam inventore animi ratione cumque laudantium ab minima. Iure voluptates molestiae perspiciatis ducimus hic perferendis recusandae aut eius vero odit officia aliquid necessitatibus fugit praesentium natus porro dolore unde, adipisci harum facilis quibusdam animi consequatur? Delectus assumenda cupiditate similique quaerat nesciunt ea adipisci voluptatibus, tempora accusantium culpa modi nulla nam possimus sed officiis impedit neque expedita iusto ab architecto quibusdam consectetur officia? Error ad culpa illo iste aliquid voluptas quis, laboriosam maiores, quo eius earum iure sint saepe quisquam explicabo deserunt. Ratione incidunt similique quasi facilis laboriosam tempore mollitia vel fugit ad aut reprehenderit iusto facere ipsa obcaecati adipisci in, repellat molestias, atque minima. Qui tempore sequi, aliquam omnis laudantium repellat nobis hic dicta quibusdam. Atque explicabo illo, et dicta tempora, ipsa nesciunt officiis alias adipisci, at maiores. Sint, rerum eaque. Quas quibusdam modi veritatis sint assumenda nam voluptatem unde.</p>
+            </section>
+        </article>
+        <aside>
+            <section class="aside">
+                <h2 class="aside-judul">Menu</h2>
+                <section class="gambar">
+                    <img src="img/gambar1.jpeg" alt="">
+                </section>
+                <section class="gambar">
+                    <img src="img/gambar2.jpeg" alt="">
+                </section>
+                <section class="gambar">
+                    <img src="img/gambar3.jpeg" alt="">
+                </section>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
